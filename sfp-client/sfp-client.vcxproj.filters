@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{73335ffa-a1cd-48f8-bcfc-66c05426b71b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\utils">
+      <UniqueIdentifier>{ec4d2dc8-32b1-42e9-b050-718495907257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\jvm">
+      <UniqueIdentifier>{1a65900b-337a-4f4b-aac4-0debf0e18fbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\jvm\type">
+      <UniqueIdentifier>{c7f31215-c8a7-43b4-b785-29dfce984baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\jvm\type\class">
+      <UniqueIdentifier>{98c50b87-44f2-4452-8df9-a4d3a3fa20fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\jvm\type\object">
+      <UniqueIdentifier>{20614b9a-038c-4af0-b22b-bccf06d6aa71}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="jvm\jvm.cpp">
+      <Filter>source\jvm</Filter>
+    </ClCompile>
+    <ClCompile Include="jvm\type\class\c_class_wrapper.cpp">
+      <Filter>source\jvm\type\class</Filter>
+    </ClCompile>
+    <ClCompile Include="jvm\type\object\c_object_wrapper.cpp">
+      <Filter>source\jvm\type\object</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\includes.h">
+      <Filter>source\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="jvm\jvm.h">
+      <Filter>source\jvm</Filter>
+    </ClInclude>
+    <ClInclude Include="jvm\type\class\c_class_wrapper.h">
+      <Filter>source\jvm\type\class</Filter>
+    </ClInclude>
+    <ClInclude Include="jvm\type\object\c_object_wrapper.h">
+      <Filter>source\jvm\type\object</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
