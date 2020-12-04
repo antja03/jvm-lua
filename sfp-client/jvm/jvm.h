@@ -1,28 +1,19 @@
 #pragma once
 
-#include "../utils/includes.h"
-#include "type/class/c_class_wrapper.h" // includes object wrapper
+#ifndef sfp_c_jvm_wrapper
+#define sfp_c_jvm_wrapper
 
-class c_jvm_wrapper
+#include "type/class/c_class_wrapper.h"
+
+namespace jvm
 {
-private:
-	JavaVM* vm;
-	JNIEnv* env;
-
-public:
-	JavaVM* get_vm()
-	{
-		return this->vm;
-	}
-
-	JNIEnv* get_env()
-	{
-		return this->env;
-	}
+	extern JavaVM* vm;
+	extern JNIEnv* env;
 
 	int init();
-	std::unique_ptr<c_class_wrapper> find_class(const char* name);
+	c_class_wrapper* find_class(const char* name);
+
 
 };
 
-extern std::unique_ptr<c_jvm_wrapper> g_jvm;
+#endif

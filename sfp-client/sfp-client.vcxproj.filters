@@ -23,19 +23,37 @@
     <Filter Include="source\jvm\type\object">
       <UniqueIdentifier>{20614b9a-038c-4af0-b22b-bccf06d6aa71}</UniqueIdentifier>
     </Filter>
+    <Filter Include="source\utils\console">
+      <UniqueIdentifier>{d2a86ef9-a5f3-4c99-b5e0-b2fd21560dc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\jvm\type\params">
+      <UniqueIdentifier>{3872d62e-a7c2-4561-a559-102e64b6f509}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\executor">
+      <UniqueIdentifier>{6c45d1f4-c67e-4e4d-aa4d-057561f60403}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>source</Filter>
-    </ClCompile>
-    <ClCompile Include="jvm\jvm.cpp">
-      <Filter>source\jvm</Filter>
     </ClCompile>
     <ClCompile Include="jvm\type\class\c_class_wrapper.cpp">
       <Filter>source\jvm\type\class</Filter>
     </ClCompile>
     <ClCompile Include="jvm\type\object\c_object_wrapper.cpp">
       <Filter>source\jvm\type\object</Filter>
+    </ClCompile>
+    <ClCompile Include="jvm\jvm.cpp">
+      <Filter>source\jvm</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\console.cpp">
+      <Filter>source\utils\console</Filter>
+    </ClCompile>
+    <ClCompile Include="jvm\type\params\c_params.cpp">
+      <Filter>source\jvm\type\params</Filter>
+    </ClCompile>
+    <ClCompile Include="executor\executor.cpp">
+      <Filter>source\executor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -50,6 +68,15 @@
     </ClInclude>
     <ClInclude Include="jvm\type\object\c_object_wrapper.h">
       <Filter>source\jvm\type\object</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\console.h">
+      <Filter>source\utils\console</Filter>
+    </ClInclude>
+    <ClInclude Include="jvm\type\params\c_params.h">
+      <Filter>source\jvm\type\params</Filter>
+    </ClInclude>
+    <ClInclude Include="executor\executor.h">
+      <Filter>source\executor</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
